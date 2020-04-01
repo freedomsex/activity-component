@@ -1,0 +1,30 @@
+{
+  "name": "@freedomsex/activity-component",
+  "version": "1.0.0",
+  "description": "activity vue component",
+  "main": "index.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freedomsex/activity-component.git"
+  },
+  "dependencies": {
+    "@freedomsex/header-bar": "^1.0.0"
+  },
+  "peerDependencies": { 
+    "@freedomsex/styles": "0.1.2"
+  },
+  "keywords": [
+    "vue",
+    "template",
+    "component"
+  ],
+  "author": "tebaly",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/freedomsex/activity-component/issues"
+  },
+  "homepage": "https://github.com/freedomsex/activity-component#readme"
+}
