@@ -29,7 +29,7 @@ export default {
 <template>
   <div>
     <div class="activity__mask" @click.self="$emit('close')"></div>
-    <div :class="style" @click.self="$emit('close')">
+    <div class="activity-component" :class="style" @click.self="$emit('close')">
       <div class="activity__wrapper">
         <ActivityHeader :caption="caption" :back="true" @close="$emit('close')">
           <template slot="option">
