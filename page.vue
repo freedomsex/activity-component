@@ -27,57 +27,55 @@ export default {
 </script>
 
 <template>
-  <div class="activity-component">
+  <div class="activity-page">
+    <ActivityHeader :caption="caption" :back="true" :fixed="true" @close="$emit('close')">
+      <template #caption>
+        <slot name="caption"/>
+      </template>
+      <template #option>
+        <slot name="option"/>
+      </template>
+    </ActivityHeader>
+
     <div :class="style" @click.self="$emit('close')">
-      <div class="activity__wrapper">
-        <ActivityHeader :caption="caption" :back="true" @close="$emit('close')">
-          <template #caption>
-            <slot name="caption"/>
-          </template>          
-          <template #option>
-            <slot name="option"/>
-          </template>
-        </ActivityHeader>
-        
+      <div class="activity-page__wrapper">
         <slot name="header"/>
-        
-        <div class="activity__container">
+
+        <div class="activity-page__container">
           <slot></slot>
         </div>
-        
-        <div class="activity__footer">
+
+        <div class="activity-page__footer">
           <slot name="footer"/>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 </template>
 
 <style lang="less">
-.activity-page {
+.activity {
+  &-section {
+    margin-bottom: @indent-lg;
+
+    &__title {
+      margin-bottom: @indent-sm;
+      font-size: 20px;
+    }
+    &__tile {
+      margin-bottom: @indent-xs;
+      color: @carbon;
+    }
+    // &__link {
+    //   display: inline-block;
+    //   padding: @indent-xs 0;
+    //   .link_simple;
+    // }
+  }
+
   &__title {
     font-weight: bolder;
     line-height: 20px;
-  }
-  &__wrapper {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    max-width: @activity-width;
-
-    background: @white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-  &__container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    flex: 1 1 auto;
-    overflow-y: auto;
-    padding: @indent-sm @indent-sm @indent-md;
   }
   &__content {
     padding: @indent-sm @indent-sm @indent-md;
@@ -93,49 +91,61 @@ export default {
   }
 }
 
-.activity-mixin() {
-  .fixed-container();
-
-  max-width: @document-width;
-
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.default-activity {
-  .activity-mixin;
-  .activity {
-    &__container {
-      padding: 0;
-    }
+.activity-page {
+  &__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: @activity-width;
+    background: @white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
-}
-
-.wrapped-activity {
-  .activity-mixin;
-  .activity {
-    &__container {
-      padding: @indent-sm @indent-sm @indent-md;
-    }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: @indent-sm @indent-sm @indent-md;
   }
-}
 
-.content-activity {
-  .activity-mixin;
+  .activity-mixin() {
+    max-width: @document-width;
+    margin: 0 auto;
+    margin-top: @menu-bar-height;
+  }
 
-  .activity {
-    &__wrapper {
-      max-width: 100%;
-      max-height: 100%;
-    }
-    &__container {
-      height: calc(~'100% - 50px');
-      padding: @indent-sm @indent-sm @indent-xl;
-      h1 {
-        margin-top: @indent-xs;
+  .default-activity {
+    .activity-mixin;
+    .activity-page {
+      &__container {
+        padding: 0;
       }
     }
   }
+
+  .wrapped-activity {
+    .activity-mixin;
+    .activity-page {
+      &__container {
+        padding: @indent-sm @indent-sm @indent-xl;
+      }
+    }
+  }
+
+  .content-activity {
+    .activity-mixin;
+    .activity-page {
+      &__container {
+        h1 {
+          margin-top: @indent-xs;
+        }
+      }
+    }
+  }
+
 }
 
 .hint-info {
@@ -152,26 +162,8 @@ export default {
   color: @gray;
 }
 
-.activity-section {
-  margin-bottom: @indent-lg;
-
-  &__title {
-    margin-bottom: @indent-sm;
-    font-size: 20px;
-  }
-  &__tile {
-    margin-bottom: @indent-xs;
-    color: @carbon;
-  }
-  // &__link {
-  //   display: inline-block;
-  //   padding: @indent-xs 0;
-  //   .link_simple;
-  // }
+.limited-form {
+  max-width: 220px;
 }
-
-  .limited-form {
-    max-width: 220px;
-  }
 
 </style>
