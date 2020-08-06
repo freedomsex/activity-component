@@ -15,12 +15,12 @@ export default {
   computed: {
     style() {
       if (this.type === 'wrapped') {
-        return 'wrapped-activity';
+        return 'wrapped-page';
       }
       if (this.type === 'content') {
-        return 'content-activity';
+        return 'content-page';
       }
-      return 'default-activity';
+      return 'default-page';
     },
   },
 };
@@ -111,14 +111,14 @@ export default {
     padding: @indent-sm @indent-sm @indent-md;
   }
 
-  .activity-mixin() {
+  .activity-page-mixin() {
     max-width: @document-width;
     margin: 0 auto;
     margin-top: @menu-bar-height;
   }
 
-  .default-activity {
-    .activity-mixin;
+  .default-page {
+    .activity-page-mixin;
     .activity-page {
       &__container {
         padding: 0;
@@ -126,8 +126,8 @@ export default {
     }
   }
 
-  .wrapped-activity {
-    .activity-mixin;
+  .wrapped-page {
+    .activity-page-mixin;
     .activity-page {
       &__container {
         padding: @indent-sm @indent-sm @indent-xl;
@@ -135,8 +135,8 @@ export default {
     }
   }
 
-  .content-activity {
-    .activity-mixin;
+  .content-page {
+    .activity-page-mixin;
     .activity-page {
       &__container {
         h1 {

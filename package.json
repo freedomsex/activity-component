@@ -13,7 +13,7 @@
   "dependencies": {
     "@freedomsex/header-bar": "^1.0.0"
   },
-  "peerDependencies": { 
+  "peerDependencies": {
     "@freedomsex/styles": "0.1.2"
   },
   "keywords": [
