@@ -4,7 +4,7 @@ import ActivityBehavior from './activity-behavior';
 
 export default {
   name: 'DefaultActivity',
-  props: ['caption', 'type', 'limited'],
+  props: ['caption', 'type'],
   extends: ActivityBehavior,
   data: () => ({
 
@@ -28,23 +28,25 @@ export default {
 
 <template>
   <div class="activity-component">
-    <div class="activity__mask" @click.self="$emit('close')"></div>
     <div :class="style" @click.self="$emit('close')">
-      <div class="activity__wrapper" :class="{limited}">
+      <div class="activity__wrapper">
         <ActivityHeader :caption="caption" :back="true" @close="$emit('close')">
-          <template slot="option">
-            <slot name="option"></slot>
+          <template #caption>
+            <slot name="caption"/>
+          </template>          
+          <template #option>
+            <slot name="option"/>
           </template>
         </ActivityHeader>
         
-        <slot name="header"></slot> 
+        <slot name="header"/>
         
         <div class="activity__container">
           <slot></slot>
         </div>
         
         <div class="activity__footer">
-          <slot name="footer"></slot>
+          <slot name="footer"/>
         </div>
       </div>
     </div>
@@ -52,10 +54,7 @@ export default {
 </template>
 
 <style lang="less">
-.activity {
-  &__mask {
-    .fixed-dialog-mask;
-  }
+.activity-page {
   &__title {
     font-weight: bolder;
     line-height: 20px;
@@ -66,12 +65,6 @@ export default {
     margin: 0 auto;
     max-width: @activity-width;
 
-    &.limited {
-      @media (min-width: @activity-width) {
-        max-height: @activity-height;
-      }
-    }
- 
     background: @white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
     display: flex;
