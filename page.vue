@@ -92,12 +92,18 @@ export default {
 }
 
 .activity-page {
+  width: 100%;
+  height: 100%;
+
   &__wrapper {
-    width: 100%;
-    margin: 0 auto;
+    height: 100%;
     max-width: @activity-width;
+    @media (min-width: @activity-width) {
+      max-height: @activity-height;
+    }
+    margin: 0 auto;
     background: @white;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     overflow: hidden;
