@@ -103,7 +103,7 @@ export default {
     }
     margin: 0 auto;
     background: @white;
-    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -118,6 +118,7 @@ export default {
   }
 
   .activity-page-mixin() {
+    height: 100%;
     max-width: @document-width;
     margin: 0 auto;
     margin-top: @menu-bar-height;
