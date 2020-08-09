@@ -96,11 +96,8 @@ export default {
   height: 100%;
 
   &__wrapper {
-    height: 100%;
     max-width: @activity-width;
-    @media (min-width: @activity-width) {
-      max-height: @activity-height;
-    }
+    min-height: @activity-height;
     margin: 0 auto;
     background: @white;
     box-shadow: 0 0px 1px rgba(0, 0, 0, 0.8);
@@ -118,7 +115,6 @@ export default {
   }
 
   .activity-page-mixin() {
-    height: 100%;
     max-width: @document-width;
     margin: 0 auto;
     margin-top: @menu-bar-height;
