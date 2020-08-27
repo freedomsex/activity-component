@@ -104,10 +104,10 @@ export default {
     overflow: hidden;
   }
   &__container {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     position: relative;
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
     overflow-y: auto;
     padding: @indent-sm @indent-sm @indent-md;
   }
