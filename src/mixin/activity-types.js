@@ -1,5 +1,5 @@
-import ActivityBehavior from './src/mixin/activity-behavior';
-import ActivityHeader from './ActivityHeader';
+import ActivityBehavior from './activity-behavior';
+import ActivityHeader from '../../ActivityHeader';
 
 export default {
   props: ['caption', 'type'],
