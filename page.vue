@@ -92,6 +92,7 @@ export default {
 }
 
 .activity-page {
+  height: 100%;
 
   &__wrapper {
     max-width: @activity-width;
