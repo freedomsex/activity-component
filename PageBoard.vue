@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <div class="page-simple">
+  <div class="page-board">
     <ActivityHeader :caption="caption" :back="true" :fixed="true" @close="$emit('close')">
       <template #caption>
         <slot name="caption"/>
@@ -18,14 +18,14 @@ export default {
     </ActivityHeader>
 
     <div :class="style" @click.self="$emit('close')">
-      <div class="page-simple__wrapper">
+      <div class="page-board__wrapper">
         <slot name="header"/>
 
-        <div class="page-simple__container">
+        <div class="page-board__container">
           <slot></slot>
         </div>
 
-        <div class="page-simple__footer">
+        <div class="page-board__footer">
           <slot name="footer"/>
         </div>
       </div>

@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <div class="page-simple">
+  <div class="page-flex">
     <ActivityHeader :caption="caption" :back="true" :fixed="true" @close="$emit('close')">
       <template #caption>
         <slot name="caption"/>
@@ -18,14 +18,14 @@ export default {
     </ActivityHeader>
 
     <div :class="style" @click.self="$emit('close')">
-      <div class="page-simple__wrapper">
+      <div class="page-flex__wrapper">
         <slot name="header"/>
 
-        <div class="page-simple__container">
+        <div class="page-flex__container">
           <slot></slot>
         </div>
 
-        <div class="page-simple__footer">
+        <div class="page-flex__footer">
           <slot name="footer"/>
         </div>
       </div>
@@ -37,7 +37,7 @@ export default {
 @import "./src/styles/mixin";
 @import "./src/styles/common";
 
-.page-board {
+.page-flex {
   display: flex;
   flex-direction: column;
 
