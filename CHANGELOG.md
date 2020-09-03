@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.9](https://github.com/freedomsex/activity-component/compare/v2.1.8...v2.1.9) (2020-09-03)
+
+
+### Bug Fixes
+
+* page no max ([778f9b5](https://github.com/freedomsex/activity-component/commit/778f9b5218a10edf1af2d62c73bf3ad4a31d70cb))
+
 ### [2.1.8](https://github.com/freedomsex/activity-component/compare/v2.1.7...v2.1.8) (2020-09-03)
 
 
