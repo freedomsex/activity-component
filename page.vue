@@ -99,17 +99,17 @@ export default {
     margin: 0 auto;
     background: @white;
     // box-shadow: 0 0px 1px rgba(0, 0, 0, 0.8);
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
     height: 100%;
   }
   &__container {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     position: relative;
     height: 100%;
-    // flex: 1 1 auto;
+    flex: 1 1 auto;
     overflow-y: auto;
     padding: @indent-sm @indent-sm @indent-md;
   }
