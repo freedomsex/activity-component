@@ -1,7 +1,7 @@
 <script>
 // import PageSimple from './PageSimple';
 import ActivityHeader from './ActivityHeader';
-import ActivityBehavior from './activity-behavior';
+import ActivityBehavior from './src/mixin/activity-behavior';
 
 export default {
   name: 'DefaultPage',
