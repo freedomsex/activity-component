@@ -107,13 +107,14 @@ export default {
     // display: flex;
     // flex-direction: column;
     position: relative;
-    min-height: 100%;
+    height: 100%;
     // flex: 1 1 auto;
     overflow-y: auto;
     padding: @indent-sm @indent-sm @indent-md;
   }
 
   .activity-page-mixin() {
+    height: 100%;
     max-width: @document-width;
     margin: 0 auto;
     margin-top: @menu-bar-height;
