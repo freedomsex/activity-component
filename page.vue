@@ -92,11 +92,11 @@ export default {
 }
 
 .activity-page {
-  height: 100%;
+  flex: 1 1 auto;
 
   &__wrapper {
     max-width: @activity-width;
-    min-height: @activity-height;
+    // min-height: @activity-height;
     margin: 0 auto;
     background: @white;
     // box-shadow: 0 0px 1px rgba(0, 0, 0, 0.8);
