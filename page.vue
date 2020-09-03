@@ -92,6 +92,7 @@ export default {
 }
 
 .activity-page {
+  max-height: 100%;
   flex: 1 1 auto;
 
   &__wrapper {
