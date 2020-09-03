@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.2](https://github.com/freedomsex/activity-component/compare/v2.1.1...v2.1.2) (2020-09-03)
+
+
+### Bug Fixes
+
+* page-wrapper 100% height ([5321971](https://github.com/freedomsex/activity-component/commit/53219719186413524c79e23e8ba4c7ad7bf4bdfb))
+
 ### [2.1.1](https://github.com/freedomsex/activity-component/compare/v2.1.0...v2.1.1) (2020-09-03)
 
 
