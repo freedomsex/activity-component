@@ -119,7 +119,7 @@ export default {
     height: 100%;
     max-width: @document-width;
     margin: 0 auto;
-    margin-top: @menu-bar-height;
+    padding-top: @menu-bar-height;
   }
 
   .default-page {
