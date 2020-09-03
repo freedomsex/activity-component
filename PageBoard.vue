@@ -1,7 +1,7 @@
 <script>
 import ActivityTypes from './src/mixin/activity-types';
 export default {
-  name: 'PageSimple',
+  name: 'PageBoard',
   extends: ActivityTypes,
 };
 </script>
@@ -60,7 +60,7 @@ export default {
     overflow-y: auto;
   }
 
-  .page-simple-mixin() {
+  .page-board-mixin() {
     .page-mixin();
 
     display: flex;
@@ -70,24 +70,24 @@ export default {
   }
 
   .default-page {
-    .page-simple-mixin();
-    .page-simple {
+    .page-board-mixin();
+    .page-board {
       &__container {
         .default-type();
       }
     }
   }
   .wrapped-page {
-    .page-simple-mixin();
-    .page-simple {
+    .page-board-mixin();
+    .page-board {
       &__container {
         .wrapped-type();
       }
     }
   }
   .content-page {
-    .page-simple-mixin();
-    .page-simple {
+    .page-board-mixin();
+    .page-board {
       &__container {
         .content-type();
       }
