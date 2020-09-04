@@ -45,10 +45,10 @@ export default {
 
   .types-mixin();
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+  // &__wrapper {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
   &__container {
     flex: 1 1 auto;
   }
