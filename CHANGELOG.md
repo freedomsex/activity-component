@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/freedomsex/activity-component/compare/v2.1.23...v2.2.0) (2020-09-04)
+
+
+### Features
+
+* PageSimple instead `page`. PageBoard - height 100%, PageFlex - some flex ([dab94cd](https://github.com/freedomsex/activity-component/commit/dab94cd7ff354f0c00c6c9695437eb60ec56ca0b))
+
 ### [2.1.23](https://github.com/freedomsex/activity-component/compare/v2.1.22...v2.1.23) (2020-09-04)
 
 
