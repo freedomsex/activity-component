@@ -48,24 +48,14 @@ export default {
   &__wrapper {
     display: flex;
     flex-direction: column;
-    // overflow: hidden;
-    // height: 100%;
   }
   &__container {
-    display: flex;
-    flex-direction: column;
-    // height: 100%;
     flex: 1 1 auto;
-    // overflow-y: auto;
   }
 
   .page-flex-mixin() {
     .page-mixin();
 
-    display: flex;
-    flex-direction: column;
-    // overflow: hidden;
-    // height: 100%;
   }
 
   .default-page {
