@@ -41,8 +41,6 @@ export default {
   display: flex;
   flex-direction: column;
 
-  .section-mixin();
-
   .types-mixin();
 
   // &__wrapper {

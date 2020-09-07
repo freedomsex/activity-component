@@ -42,8 +42,6 @@ export default {
   max-height: 100%;
   overflow: hidden;
 
-  .section-mixin();
-
   .types-mixin();
 
   &__wrapper {

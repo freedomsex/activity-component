@@ -1,3 +1,40 @@
+.activity {
+  &-section {
+    margin-bottom: @indent-lg;
+
+    &__title {
+      margin-bottom: @indent-sm;
+      font-size: 20px;
+    }
+    &__tile {
+      margin-bottom: @indent-xs;
+      color: @carbon;
+    }
+    // &__link {
+    //   display: inline-block;
+    //   padding: @indent-xs 0;
+    //   .link_simple;
+    // }
+  }
+
+  &__title {
+    font-weight: bolder;
+    line-height: 20px;
+  }
+  &__content {
+    padding: @indent-sm @indent-sm @indent-md;
+  }
+  &__loader {
+    color: @gray;
+  }
+  &__splitter {
+    height: @indent-sm;
+  }
+  &__footer {
+    flex: 0 1 auto;
+  }
+}
+
 
 .hint-info {
   background: @light;

@@ -39,8 +39,6 @@ export default {
 
 .page-simple {
 
-  .section-mixin();
-
   .types-mixin();
 
   .page-simple-mixin() {
