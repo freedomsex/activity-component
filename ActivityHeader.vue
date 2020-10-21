@@ -5,6 +5,9 @@ export default {
   props: ['back', 'caption', 'glass', 'fixed'],
   computed: {
     backButton() {
+      if (this.back === false) {
+        return false;
+      }
       return this.back || this.caption;
     },
   },
