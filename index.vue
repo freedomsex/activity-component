@@ -1,6 +1,6 @@
 <script>
 import ActivityHeader from './ActivityHeader';
-import ActivityBehavior from './activity-behavior';
+import ActivityBehavior from './src/mixin/activity-behavior';
 
 export default {
   name: 'DefaultActivity',
@@ -36,19 +36,19 @@ export default {
             <slot name="option"></slot>
           </template>
         </ActivityHeader>
-        
-        <slot name="header"></slot> 
-        
+
+        <slot name="header"></slot>
+
         <div class="activity__container">
           <slot></slot>
         </div>
-        
+
         <div class="activity__footer">
           <slot name="footer"></slot>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 </template>
 
 <style lang="less">
@@ -71,7 +71,7 @@ export default {
         max-height: @activity-height;
       }
     }
- 
+
     background: @white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
     display: flex;
