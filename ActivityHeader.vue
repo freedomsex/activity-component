@@ -1,5 +1,5 @@
 <script>
-import HeaderBar from '@freedomsex/header-bar';
+import HeaderBar from '@freedomsex/header-bar/HeaderBar.vue';
 
 export default {
   props: ['back', 'caption', 'glass', 'fixed'],
