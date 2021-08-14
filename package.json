@@ -1,6 +1,6 @@
 {
   "name": "@freedomsex/activity-component",
-  "version": "2.2.3",
+  "version": "2.3.0",
   "description": "activity vue component",
   "main": "index.vue",
   "scripts": {
